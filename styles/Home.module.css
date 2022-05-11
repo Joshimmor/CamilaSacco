@@ -13,13 +13,10 @@
   font-size: smaller;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
+
 .Profile{
+  background-image: url("/Camila.jpg");
+  background-size: cover;
   top: 10px;
   left: 5px;
   position: absolute;
@@ -42,32 +39,90 @@
   justify-content: center;
   padding-right: 2%;
 }
+.type{
+  width:30%;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight:bolder;
+  color: rgb(72, 72, 72);
+}
 .block{
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
   padding-left:10px;
   padding-right:10px;
   padding-bottom: 10%;
 }
 .blockimg{
-  width: 80vw;
-  background-image: url("../public/test.jpg");
-  object-fit: cover;
-  height: inherit;
-	background: #F8F8F8; 
+width: 50%;
+height: 50vh;
+background-image: url("/camila2.jpg");
+background-size: cover;
 	border: solid #BDBDBD 1px; 
 	box-shadow: 15px 12px 0 rgba(205, 151, 135, 0.5)  ; 
 	-webkit-box-shadow: 15px 12px 0 rgba(205, 151, 135, 0.5)  ; 
 	-moz-box-shadow: 15px 12px 0 rgba(205, 151, 135, 0.5)  ; 
 }
-.blockimg2{
-  width: 80vw;
-  background-image: url("../public/test.jpg");
-  object-fit: cover;
-  height: inherit;
-	background: #F8F8F8; 
-	border: solid #BDBDBD 1px; 
+.blockimg1{
+  width: 50%;
+  height: 50vh;
+  background-image: url("/camila3.jpg");
+  background-size: cover;
+  border: solid #BDBDBD 1px; 
 	box-shadow: -14px 12px 1px rgba(205, 151, 135, 0.5)  ; 
 	-webkit-box-shadow: -14px 12px 1px rgba(205, 151, 135, 0.5)  ; 
 	-moz-box-shadow: -14px 12px 1px rgba(205, 151, 135, 0.5)  ; 
-}
+  }
+  .blockimg2{
+    width: 50%;
+    height: 50vh;
+    background-image: url("/camila4.jpg");
+    background-size: cover;
+    border: solid #BDBDBD 1px; 
+    box-shadow: 15px 12px 0 rgba(205, 151, 135, 0.5)  ; 
+    -webkit-box-shadow: 15px 12px 0 rgba(205, 151, 135, 0.5)  ; 
+    -moz-box-shadow: 15px 12px 0 rgba(205, 151, 135, 0.5)  ; 
+    }
+    .blockimg3{
+      width: 50%;
+      height: 50vh;
+      background-image: url("/camila5.jpg");
+      background-size: cover;
+      border: solid #BDBDBD 1px; 
+      box-shadow: -14px 12px 1px rgba(205, 151, 135, 0.5)  ; 
+      -webkit-box-shadow: -14px 12px 1px rgba(205, 151, 135, 0.5)  ; 
+      -moz-box-shadow: -14px 12px 1px rgba(205, 151, 135, 0.5)  ; 
+      }
+      .blockimg4{
+        width: 50%;
+        height: 50vh;
+        background-image: url("/camila6.jpg");
+        background-size: cover;
+        border: solid #BDBDBD 1px; 
+        box-shadow: 15px 12px 0 rgba(205, 151, 135, 0.5)  ; 
+        -webkit-box-shadow: 15px 12px 0 rgba(205, 151, 135, 0.5)  ; 
+        -moz-box-shadow: 15px 12px 0 rgba(205, 151, 135, 0.5)  ;  
+        }
+        .blockimg5{
+          width: 50%;
+          height: 50vh;
+          background-image: url("/camila7.jpg");
+          background-size: cover;
+          border: solid #BDBDBD 1px; 
+          box-shadow: -14px 12px 1px rgba(205, 151, 135, 0.5)  ; 
+          -webkit-box-shadow: -14px 12px 1px rgba(205, 151, 135, 0.5)  ; 
+          -moz-box-shadow: -14px 12px 1px rgba(205, 151, 135, 0.5)  ; 
+          }
+          .blockimg6{
+            width: 50%;
+            height: 50vh;
+            background-image: url("/camila8.jpg");
+            background-size: cover;
+            border: solid #BDBDBD 1px; 
+            box-shadow: 15px 12px 0 rgba(205, 151, 135, 0.5)  ; 
+            -webkit-box-shadow: 15px 12px 0 rgba(205, 151, 135, 0.5)  ; 
+            -moz-box-shadow: 15px 12px 0 rgba(205, 151, 135, 0.5)  ;   ; 
+            }
+
+
