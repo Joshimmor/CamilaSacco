@@ -18,10 +18,21 @@ const Home: NextPage = () => {
           <p className={styles.text}>Miss New Hampshire USA 2022</p>
         </div>
       </div>
-      <div className={styles.block}>
+      <div style={{paddingTop: '20vh'}} className={styles.block}>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iure quod? Voluptate, placeat sed! Aperiam officia nostrum nulla, iste ratione sapiente totam iusto, nihil illo iure sint in suscipit.</p>
-        <div className={styles.blockimg}>
-        </div>
+        <div className={styles.blockimg2}></div>
+      </div>
+      <div  className={styles.block}>
+        <div className={styles.blockimg}></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iure quod? Voluptate, placeat sed! Aperiam officia nostrum nulla, iste ratione sapiente totam iusto, nihil illo iure sint in suscipit.</p>
+      </div>
+      <div  className={styles.block}>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iure quod? Voluptate, placeat sed! Aperiam officia nostrum nulla, iste ratione sapiente totam iusto, nihil illo iure sint in suscipit.</p>
+        <div className={styles.blockimg}></div>
+      </div>
+      <div  className={styles.block}>
+        <div className={styles.blockimg2}></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iure quod? Voluptate, placeat sed! Aperiam officia nostrum nulla, iste ratione sapiente totam iusto, nihil illo iure sint in suscipit.</p>
       </div>
     </div>
   )
