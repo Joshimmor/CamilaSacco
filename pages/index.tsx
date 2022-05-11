@@ -1,55 +1,71 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image';
 import styles from '../styles/Home.module.css'
-import { motion } from "framer-motion"
-
+const { motion } = require("framer-motion");
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
         <title>Camila Sacco</title>
         <meta name="description" content="Miss New Hampshire" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet"></link>
       </Head>
       <div>
-        <motion.div initial={{y:-150}} animate={{y:0}} transition={{delay:1.5}}  className={styles.Profile}></motion.div>
+        <motion.div initial={{y:-200}} animate={{y:0}} transition={{delay:1.5}}  className={styles.Profile}></motion.div>
         <motion.div initial={{x:100,borderRadius: 50, scale:1000}} animate={{x:0,borderRadius: 0,scale:1}} transition={{ duration: 1.5 }} className={styles.banner}>
-          <h1 className={styles.title}>CAMILA SACCO</h1>
+          <h3 className={styles.title}>CAMILA SACCO</h3>
           <p className={styles.text}>Miss New Hampshire USA 2022</p>
         </motion.div>
       </div>
-      <div style={{paddingTop: '20vh'}} className={styles.block}>
-        <motion.p initial={{x:-200,opacity:0}} animate={{x:0,opacity:1}} transition={{delay:2.5 ,duration:.5}} className={styles.type} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iure quod? Voluptate, placeat sed! Aperiam officia nostrum nulla, iste ratione sapiente totam iusto, nihil illo iure sint in suscipit.</motion.p>
-        <motion.div initial={{x:200,opacity:0}} animate={{x:0,opacity:1}} transition={{delay:2.5,duration:.5}} className={styles.blockimg}>
-        </motion.div>
+      <div style={{paddingTop: '25vh'}} className={styles.block}>
+        <motion.p initial={{x:-200,opacity:0}} animate={{x:0,opacity:1}} transition={{delay:1.5, duration:.5}} className={styles.type}>
+        <motion.img  initial={{x:200,opacity:0}} animate={{x:0,opacity:1}} transition={{delay:1.5, duration:1}} className={styles.blockimg} src={"/camila2.jpg"} />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iure quod? Voluptate, placeat sed! 
+          Aperiam officia nostrum nulla, iste ratione sapiente totam iusto, nihil illo iure sint in suscipit.
+          </motion.p>
+      </div>
+      {/* <div className={styles.block}>
+        <p  className={styles.type} >
+        <div   className={styles.blockimg1}>  </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iure quod? Voluptate, placeat sed! 
+          Aperiam officia nostrum nulla, iste ratione sapiente totam iusto, nihil illo iure sint in suscipit.
+          </p>
       </div>
       <div className={styles.block}>
-      <motion.div  initial={{x:-200,opacity:0}} animate={{x:0,opacity:1}} transition={{delay:3.5,duration:.5}} className={styles.blockimg1}>  </motion.div>
-        <motion.p initial={{x:200,opacity:0}} animate={{x:0,opacity:1}} transition={{delay:3.5,duration:.5}} className={styles.type} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iure quod? Voluptate, placeat sed! Aperiam officia nostrum nulla, iste ratione sapiente totam iusto, nihil illo iure sint in suscipit.</motion.p>
+        <p  className={styles.type} >
+        <div className={styles.blockimg2}>  </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iure quod? Voluptate, placeat sed! 
+          Aperiam officia nostrum nulla, iste ratione sapiente totam iusto, nihil illo iure sint in suscipit.
+          </p>
       </div>
       <div className={styles.block}>
-        <motion.p  initial={{x:-200,opacity:0}} animate={{x:0,opacity:1}} transition={{delay:4.5,duration:.5}} className={styles.type} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iure quod? Voluptate, placeat sed! Aperiam officia nostrum nulla, iste ratione sapiente totam iusto, nihil illo iure sint in suscipit.</motion.p>
-        <motion.div  initial={{x:200,opacity:0}} animate={{x:0,opacity:1}} transition={{delay:4.5,duration:.5}} className={styles.blockimg2}>
-        </motion.div>
+        <p  className={styles.type} >
+        <div className={styles.blockimg3}>  </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iure quod? Voluptate, placeat sed! 
+          Aperiam officia nostrum nulla, iste ratione sapiente totam iusto, nihil illo iure sint in suscipit.
+          </p>
       </div>
       <div className={styles.block}>
-      <div  className={styles.blockimg3}>  </div>
-        <p className={styles.type} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iure quod? Voluptate, placeat sed! Aperiam officia nostrum nulla, iste ratione sapiente totam iusto, nihil illo iure sint in suscipit.</p>
+        <p  className={styles.type} >
+        <div className={styles.blockimg4}>  </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iure quod? Voluptate, placeat sed! 
+          Aperiam officia nostrum nulla, iste ratione sapiente totam iusto, nihil illo iure sint in suscipit.
+          </p>
       </div>
       <div className={styles.block}>
-        <p className={styles.type} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iure quod? Voluptate, placeat sed! Aperiam officia nostrum nulla, iste ratione sapiente totam iusto, nihil illo iure sint in suscipit.</p>
-        <div  className={styles.blockimg4}>
-        </div>
+        <p  className={styles.type} >
+        <div className={styles.blockimg5}>  </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iure quod? Voluptate, placeat sed! 
+          Aperiam officia nostrum nulla, iste ratione sapiente totam iusto, nihil illo iure sint in suscipit.
+          </p>
       </div>
       <div className={styles.block}>
-      <div  className={styles.blockimg5}></div>
-        <p className={styles.type} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iure quod? Voluptate, placeat sed! Aperiam officia nostrum nulla, iste ratione sapiente totam iusto, nihil illo iure sint in suscipit.</p>
-      </div>
-      <div className={styles.block}>
-        <p className={styles.type} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iure quod? Voluptate, placeat sed! Aperiam officia nostrum nulla, iste ratione sapiente totam iusto, nihil illo iure sint in suscipit.</p>
-        <div  className={styles.blockimg6}>
-        </div>
-      </div>
+        <p  className={styles.type} >
+        <div className={styles.blockimg6}>  </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iure quod? Voluptate, placeat sed! 
+          Aperiam officia nostrum nulla, iste ratione sapiente totam iusto, nihil illo iure sint in suscipit.
+          </p>
+      </div> */}
     </div>
   )
 }
