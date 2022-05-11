@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       </Head>
       <div>
         <motion.div initial={{y:-200}} animate={{y:0}} transition={{delay:1.5}}  className={styles.Profile}></motion.div>
-        <motion.div initial={{x:100,borderRadius: 50, scale:1000}} animate={{x:0,borderRadius: 0,scale:1}} transition={{ duration: 1.5 }} className={styles.banner}>
+        <motion.div initial={{x:100,borderRadius: 50, scale:100}} animate={{x:0,borderRadius: 0,scale:1}} transition={{ duration: 1.5 }} className={styles.banner}>
           <h3 className={styles.title}>CAMILA SACCO</h3>
           <p className={styles.text}>Miss New Hampshire USA 2022</p>
         </motion.div>
