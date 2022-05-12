@@ -28,10 +28,10 @@ const Home: NextPage = () => {
       </motion.div>
       <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5, duration:.5}} style={{marginBottom:'5vh',justifyContent:'center', paddingBottom:0}} className={styles.block}>
         <motion.p   initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5, duration:.5}} className={styles.type} style={{color:'#808080',fontSize:'Medium'}} >
-        &nbsp;&nbsp;&nbsp;&nbsp;"I started this journey six years ago as a young girl with no confidence, living life to the expectations of others, and physically and mentally unwell. That changed when I started competing in pageants. Many times on the road to pursuing this dream, I was told to give up. Had I listened and stopped watering those dreams at any point, I wouldn't have sprouted into my fullest potential.
+        &nbsp;&nbsp;&nbsp;&nbsp; &quot;I started this journey six years ago as a young girl with no confidence, living life to the expectations of others, and physically and mentally unwell. That changed when I started competing in pageants. Many times on the road to pursuing this dream, I was told to give up. Had I listened and stopped watering those dreams at any point, I wouldn&apos;t have sprouted into my fullest potential.
         <br /><br />
-         &nbsp;&nbsp;&nbsp;&nbsp;Today, I couldn’t be more in love with the woman I have become. I am confident, empowered, and secure in myself. 
-        To me, success is defined by pursuing the dreams you can’t stop thinking about, despite what those around you might say about it. I am doing just that, and I hope to inspire others to do the same. All limitations are self-imposed”
+         &nbsp;&nbsp;&nbsp;&nbsp;Today, I couldn&apos;t be more in love with the woman I have become. I am confident, empowered, and secure in myself. 
+        To me, success is defined by pursuing the dreams you can&apos;t stop thinking about, despite what those around you might say about it. I am doing just that, and I hope to inspire others to do the same. All limitations are self-imposed&quot;
         </motion.p>
       </motion.div>
       <div  className={styles.block}>
