@@ -9,6 +9,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Camila Sacco</title>
         <meta name="description" content="Miss New Hampshire" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <div>
         <motion.div initial={{x:-100}} animate={{x:0}} transition={{duration:.75}}  className={styles.Profile}></motion.div>
