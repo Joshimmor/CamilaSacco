@@ -1,9 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image';
+import { useState} from 'react';
 import styles from '../styles/Home.module.css'
+import Menu from "./menu"
 const { motion } = require("framer-motion");
 const Home: NextPage = () => {
+  let [menuVis,setMenu] = useState(false);
   return (
     <motion.div initial={{backgroundColor:'#ebb2a1'}} animate={{backgroundColor:'#ffffff'}} transition={{delay:.2, duration:1.5}} style={{paddingTop: '21vh'}}>
       <Head>
@@ -18,20 +21,14 @@ const Home: NextPage = () => {
           <p className={styles.text}>Miss New Hampshire USA 2022</p>
         </motion.div>
       </div>
-      <div className={styles.Buttons}>
-        <a href="" className={styles.links}>+Gallery</a>
-        <a href="" className={styles.links}>+Instagram</a>
-        <ul>
-          <li>@NewHampshireUSA</li>
-          <li>@CamilaSacco</li>
-          <li>@RootToSelf</li>
-        </ul>
-        <a href="" className={styles.links}>+Sponsorship</a>
-        <ul>
-          <li>Donate</li>
-          <li>Contact</li>
-        </ul>
-      </div>
+      <div className={styles.container} onClick={() => setMenu(true)}>
+        <div className={styles.bar1}></div>
+        <div className={styles.bar2}></div>
+        <div className={styles.bar3}></div>
+       </div>
+     {
+       menuVis?<Menu/>:null
+     } 
       <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5, duration:.5}} style={{marginBottom:'5vh',justifyContent:'center', paddingBottom:0}} className={styles.block}>
         <motion.p   initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5, duration:.5}} className={styles.type} style={{color:'#808080',fontSize:'Medium'}} >
         &nbsp;&nbsp;&nbsp;&nbsp; &quot;I started this journey six years ago as a young girl with no confidence, living life to the expectations of others, and physically and mentally unwell. That changed when I started competing in pageants. Many times on the road to pursuing this dream, I was told to give up. Had I listened and stopped watering those dreams at any point, I wouldn&apos;t have sprouted into my fullest potential.
