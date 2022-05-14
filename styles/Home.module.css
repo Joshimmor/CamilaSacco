@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:ital,wght@0,500;1,900&display=swap');
 .title{
-  font-family: 'Roboto Flex', sans-serif; 
+  font-family: 'Julis Sans One', sans-serif; 
   color: white; 
   letter-spacing: 3px;
   margin-bottom: 0;
 }
 .text{
   margin-top: 0;
-  font-family: 'Roboto Flex', sans-serif;
+  font-family: 'Julis Sans One', sans-serif;
   color:white;
   font-size:small;
 }
@@ -46,8 +46,8 @@
   flex-direction: column;
 }
 .type{
-  font-family: 'Roboto Flex', sans-serif;
-  font-weight:bolder;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:500;
   color: rgb(72, 72, 72);
   font-size: small;
   height: auto;
@@ -85,4 +85,25 @@
 	-webkit-box-shadow: -14px 12px 1px rgba(205, 151, 135, 0.5)  ; 
 	-moz-box-shadow: -14px 12px 1px rgba(205, 151, 135, 0.5)  ; 
   }
-  
+  .Buttons{
+    background: rgb(235,178,161);
+    background: linear-gradient(90deg, rgba(235, 178, 161, 0.727) 25%, rgba(212, 162, 145, 0.704) 100%);
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .links{
+    color: #F0f0f0;
+    font-size: 5vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
