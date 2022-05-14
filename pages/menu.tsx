@@ -1,10 +1,10 @@
 import React , {useState} from 'react'
 import styles from '../styles/Home.module.css'
 import { motion, AnimatePresence } from "framer-motion"
-function SocialLinks({social}){
+function SocialLinks({...props}){
 return(
   <AnimatePresence>
-      {social &&
+      {props.social &&
         (<motion.ul 
                 key="slinks"
                 initial={{x:100,opacity:0}}
@@ -19,10 +19,10 @@ return(
   </AnimatePresence>
   )
 }
-function DonateLinks({donate}){
+function DonateLinks({...props}){
   return(
     <AnimatePresence>
-        {donate &&
+        {props.donate &&
           (<motion.ul 
                   key="dlinks"
                   initial={{x:100,opacity:0}}
