@@ -37,7 +37,7 @@ export default function contact() {
         <meta name="description" content="Miss New Hampshire" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <form className={styles.contact} onSubmit={submitContact}>
+      <form className={styles.contact} >
             <motion.input id='name' name="name" type="text" placeholder="Name" />
             <motion.input type="email" name="email" placeholder="Email Address" />
             <motion.input type="tel" name="phone" placeholder="Telphone" />
