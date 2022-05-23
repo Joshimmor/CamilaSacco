@@ -12,24 +12,24 @@ const NAME = 'entry.1838037704'
 const EMAIL ='entry.69973401'
 const PHONE ='entry.1902507329'
 
-async function submitContact(e){
-    let form = new FormData();
-    form.append(NAME,e.target.name.value)
-    form.append(EMAIL,e.target.email.value)
-    form.append(PHONE,e.target.phone.value)
-    const res = await fetch(url,
-        {
-            body: form,
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            method: 'POST',
-          }
-        )
+// async function submitContact(e){
+//     let form = new FormData();
+//     form.append(NAME,e.target.name.value)
+//     form.append(EMAIL,e.target.email.value)
+//     form.append(PHONE,e.target.phone.value)
+//     const res = await fetch(url,
+//         {
+//             body: form,
+//             headers: {
+//               'Content-Type': 'application/json',
+//             },
+//             method: 'POST',
+//           }
+//         )
 
-}
+// }
 export default function contact() {
-    const router = useRouter()
+    //const router = useRouter()
   return (
     <div>
         <Head>
