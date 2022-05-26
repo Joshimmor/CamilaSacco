@@ -21,7 +21,7 @@ const Profile: NextPage = () => {
           <p className={styles.text}>Miss New Hampshire USA 2022</p>
         </motion.div>
       </div>
-      <div className={styles.container} onClick={() => setMenu(true)}>
+      <div style={{backgroundColor:'white',zIndex:8,padding:'10px',borderRadius:'50px'}}className={styles.container} onClick={() => setMenu(true)}>
         <div className={styles.bar1}></div>
         <div className={styles.bar2}></div>
         <div className={styles.bar3}></div>
@@ -31,18 +31,12 @@ const Profile: NextPage = () => {
      } 
       <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5, duration:.5}} style={{marginBottom:'5vh',justifyContent:'center', paddingBottom:0}} className={styles.block}>
         <motion.p   initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5, duration:.5}} className={styles.type} style={{color:'#808080',fontSize:'Medium'}} >
-        &nbsp;&nbsp;&nbsp;&nbsp; &quot;I started this journey six years ago as a young girl with no confidence, living life to the expectations of others, and physically and mentally unwell. That changed when I started competing in pageants. Many times on the road to pursuing this dream, I was told to give up. Had I listened and stopped watering those dreams at any point, I wouldn&apos;t have sprouted into my fullest potential.
+        &nbsp;&nbsp;&nbsp;&nbsp; &quot;I started this journey six years ago as a young girl with no confidence, living life to the expectations of others, and physically and mentally unwell. That changed when I started competing in pageants. Many times on the road to pursuing this dream, I was told to give up. Had I listened and stopped watering those dreams at any point, I wouldn't have sprouted into my fullest potential. Today, I couldn’t be more in love with the woman I have become. I am confident, empowered, and secure in myself.
         <br /><br />
-         &nbsp;&nbsp;&nbsp;&nbsp;Today, I couldn&apos;t be more in love with the woman I have become. I am confident, empowered, and secure in myself. 
-        To me, success is defined by pursuing the dreams you can&apos;t stop thinking about, despite what those around you might say about it. I am doing just that, and I hope to inspire others to do the same. All limitations are self-imposed&quot;
+         &nbsp;&nbsp;&nbsp;&nbsp;I define success by pursuing the dreams you can&apos;t stop thinking about, despite what those around you might say about it.
+          By doing just that, I hope to inspire others to do the same. All limitations are self-imposed.&quot;
         </motion.p>
       </motion.div>
-      <div  className={styles.block}>
-        <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5, duration:.5}} className={styles.type}>
-        On May 1, 2022 Camila Sacco was crowned Miss New Hampshire USA 2022.
-        </motion.p>
-        <motion.img  initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5, duration:1}} className={styles.blockimg} src={"/camila2.jpg"} />
-      </div>
       <div style={{backgroundColor:'#F0F0F0', paddingTop:'20px'}} className={styles.block}>
       <motion.img  initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5, duration:1}} className={styles.blockimg1} src={"/camila3.jpg"} />
         <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5, duration:.5}} className={styles.type}>
@@ -79,11 +73,17 @@ const Profile: NextPage = () => {
         </motion.p>
         <motion.img  initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5, duration:1}} className={styles.blockimg} src={"/camila9.jpg"} />
       </div>
-      <div  style={{backgroundColor:'#F0F0F0', paddingTop:'20px'}} className={styles.block}>
-        <motion.img  initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5, duration:1}} className={styles.blockimg1} src={"/camila8.jpg"} />
+      <div  className={styles.block}>
+      <motion.img  initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5, duration:1}} className={styles.blockimg1} src={"/camila2.jpg"} />
         <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5, duration:.5}} className={styles.type}>
-        New Hampshire has yet to bring win the title of Miss USA. Camila hopes to make history by being the first.
+        On May 1, 2022 Camila Sacco was crowned Miss New Hampshire USA 2022.
         </motion.p>
+      </div>
+      <div  style={{backgroundColor:'#F0F0F0', paddingTop:'20px'}} className={styles.block}>
+        <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5, duration:.5}} className={styles.type}>
+        New Hampshire has yet to bring home the title of Miss USA. Camila hopes to make history by being the first.
+        </motion.p>
+        <motion.img  initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5, duration:1}} className={styles.blockimg} src={"/camila8.jpg"}/>
       </div>
     </motion.div>
   )

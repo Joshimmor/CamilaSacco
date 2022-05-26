@@ -13,9 +13,9 @@ return(
                 exit={{x:100,opacity:0}}
                 transition={{duration:.5}}
                 className={styles.subButtons}>
-                    <li><a href="https://www.instagram.com/missnhusa/" target='_blank' rel="noreferrer">@newnhusa</a></li>
+                    <li><a href="https://www.instagram.com/missnhusa/" target='_blank' rel="noreferrer">@missnhusa</a></li>
                     <li><a href="https://www.instagram.com/camilasacco7/" target='_blank' rel="noreferrer">@camilasacco7</a></li>
-                    <li><a href="https://www.instagram.com/fromrootstoself/" target='_blank' rel="noreferrer">@fromootstoself</a></li>
+                    <li><a href="https://www.instagram.com/fromrootstoself/" target='_blank' rel="noreferrer">@fromrootstoself</a></li>
         </motion.ul>)}
   </AnimatePresence>
   )
