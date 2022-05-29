@@ -9,8 +9,7 @@ const { motion } = require("framer-motion");
 
 const addContactDocument = async (name:string,phone:string,email:string) => {
   try{
-    const users = doc(collection(db, "users"));
-     await setDoc(users, {
+    await  setDoc(doc(db, "users",name),{
       name: name,
       email: email,
       phone: phone
