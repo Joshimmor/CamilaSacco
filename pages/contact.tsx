@@ -21,9 +21,9 @@ const addContactDocument = async (name:string,phone:string,email:string) => {
     alert(error)
   }
 };
-export default function contact() {
+export default function Contact() {
     
-  const router = useRouter();
+  const Router = useRouter();
   return (
     <div>
         <Head>
@@ -44,7 +44,7 @@ export default function contact() {
       const name = target.name.value; 
       const phone = target.phone.value;
       addContactDocument(name,email,phone)
-      .then(() => router.push('/'))
+      .then(() => Router.push('/'))
       .catch((e) => console.log(e))
         }}
       >
