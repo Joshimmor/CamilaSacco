@@ -1,32 +1,29 @@
 import { AnimatePresence } from 'framer-motion';
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image';
-import { useState,useEffect} from 'react';
-import styles from '../styles/Home.module.css'
-import Menu from "./menu"
-import { fireStore,app } from '../Firebase/clientApp';
-import { collection, addDoc } from 'firebase/firestore';
-import { useRouter } from 'next/router'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import { useRouter } from 'next/router';
+import { db } from "../Firebase/clientApp"
+import { collection, setDoc ,doc} from "firebase/firestore"; 
 const { motion } = require("framer-motion");
-//const store = collection(fireStore,"Users")
-async function submitContact(name?:string,phone?:string,email?:string){
-  //if(!name) return
-  //console.log(name,email,phone)
+
+const addContactDocument = async (name:string,phone:string,email:string) => {
   try{
-   
-    let post = await addDoc(collection(fireStore,"Users"), {
+    const users = doc(collection(db, "users"));
+     await setDoc(users, {
       name: name,
       email: email,
       phone: phone
     })
-  }catch(err:any){
-    console.error(err)
+    .then(()=>alert('Data was successfully sent to cloud firestore!'))
+  }catch(error){
+    console.log(error)
+    alert(error)
   }
-}
+};
 export default function contact() {
-    //const router = useRouter();
     
+  const router = useRouter();
   return (
     <div>
         <Head>
@@ -46,7 +43,9 @@ export default function contact() {
       const email = target.email.value; 
       const name = target.name.value; 
       const phone = target.phone.value;
-      submitContact(name,email,phone)
+      addContactDocument(name,email,phone)
+      .then(() => router.push('/'))
+      .catch((e) => console.log(e))
         }}
       >
             <motion.input initial={{x:200,opacity:0}} animate={{x:0,opacity:1}} transition={{type: 'spring',ease:"easeInOut",delay:1.5, duration:.5}} id='name' name="name" type="text" placeholder="Name" />
